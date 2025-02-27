@@ -11,7 +11,6 @@ addItem(newItem) {
 }
 removeItem(itemToRemove) {
     this.#items = this.#items.filter(element => element !== itemToRemove);
-
 }
 }
 

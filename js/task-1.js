@@ -3,19 +3,24 @@ const customer = {
     balance: 24000,
     discount: 0.1,
     orders: ["Burger", "Pizza", "Salad"],
-    // Change code below this line
+    
     getBalance() {
       return this.balance;
     },
+
     getDiscount() {
       return this.discount;
     },
+
     setDiscount(value) {
       this.discount = value;
     },
+
+
     getOrders() {
       return this.orders;
     },
+
     addOrder(cost, order) {
         const finalCost = cost - cost * this.discount;
 
@@ -27,7 +32,6 @@ const customer = {
       this.orders.push(order);
       return `Your order "${order}" in process!`;
     },
-
   };
 
 
